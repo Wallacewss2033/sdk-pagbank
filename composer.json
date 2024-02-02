@@ -1,5 +1,5 @@
 {
-    "name": "sdk-pagbank",
+    "name": "vendor/sdk_pagbank",
     "description": "sdk do pagbank",
     "require": {
         "guzzlehttp/guzzle": "^7.8"
