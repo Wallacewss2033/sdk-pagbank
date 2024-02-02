@@ -1,5 +1,5 @@
 {
-    "name": "wallace/sdk_pagbank",
+    "name": "wllcee/sdk_pagbank",
     "description": "sdk do pagbank",
     "require": {
         "guzzlehttp/guzzle": "^7.8"
