@@ -26,6 +26,6 @@ class CreateOrder extends Order
             'pix' => $this->pix ?? [],
             'charges' => $this->charges ?? []
         ]);
-        return $this->orderService->create($this->config, $order);
+        return $orderService->create($this->config, $order);
     }
 }
