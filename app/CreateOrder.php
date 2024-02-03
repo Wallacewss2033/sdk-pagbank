@@ -9,17 +9,16 @@ use App\Services\OrderService;
 class CreateOrder extends Order
 {
     protected Config $config;
-    protected OrderService $orderService;
 
-    public function __construct(Config $config, OrderService $orderService)
+    public function __construct(Config $config)
     {
         $this->config = $config;
-        $this->orderService = $orderService;
     }
 
     public function handlerCreate()
     {
-        $order = $this->orderService->prepare([
+        $orderService = new OrderService();
+        $order = $orderService->prepare([
             'referenceId' => $this->referenceId,
             'items' => $this->items,
             'shipping' => $this->shipping,
