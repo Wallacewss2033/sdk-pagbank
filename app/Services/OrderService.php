@@ -47,7 +47,7 @@ class OrderService
             ]);
 
             $data = json_decode($response->getBody());
-            return ['data' => $data];
+            return $data;
         } catch (RequestException $e) {
             return $e->getMessage();
         }
